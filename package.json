@@ -12,15 +12,16 @@
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --progress --color --inline --hot  --config webpack.config.js ",
+    "dev": "webpack-dev-server --progress --color --inline --hot",
     "production": "webpack --progress -p --config webpack.config.js ",
     "build": "webpack --mode production"
   },
