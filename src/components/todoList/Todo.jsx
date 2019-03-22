@@ -26,13 +26,13 @@ export default class Todo extends Component {
          E o todo list
          </div>
          { this.state.todolist &&
-          <div>
-            <h1>Dados que devem ser exibidos</h1>
-            <code>
-            {JSON.stringify(this.state.todolist )}
-            </code>
+          <section className="todo-informacoes-desenvolvimento">
+            <h3>Dados que devem ser exibidos</h3>
+            <pre>
+            {JSON.stringify(this.state.todolist, null, 2 )}
+            </pre>
           
-            </div>
+            </section>
           }
       </div>
     )

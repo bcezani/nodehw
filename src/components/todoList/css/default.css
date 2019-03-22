@@ -7,3 +7,19 @@ COntem a primeira versão do CSS da todo list
     background-color: #cdedFF;
     color: #3366AA;
 }
+
+
+
+/* Depois vai ser removido */
+
+.todo-informacoes-desenvolvimento{
+    background-color: #ccccff;
+}
+
+.todo-informacoes-desenvolvimento pre{
+    background-color: #efefef;
+    padding: 10px;
+    line-height: 2;
+    color: #666699;
+
+}
