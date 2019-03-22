@@ -1,0 +1,29 @@
+[
+    '{{repeat(5, 7)}}',
+    {
+      _id: '{{objectId()}}',
+      isReady: '{{bool()}}',
+      title: '{{lorem(7, "words")}}',
+      creator: { 
+        id: '{{objectId()}}',
+        email: '{{email()}}'
+      },
+      registered: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
+      coordinates:{
+        latitude: '{{floating(-90.000001, 90)}}',
+        longitude: '{{floating(-180.000001, 180)}}'
+      },
+      tags: [
+        '{{repeat(7)}}',
+        '{{lorem(1, "words")}}'
+      ],
+      responsibles: [
+        '{{repeat(0,2)}}',
+        {
+          id: '{{objectId()}}',
+          email: '{{email()}}'
+        }
+      ],
+      details: '{{lorem(1, "paragraphs")}}'
+    }
+  ]
