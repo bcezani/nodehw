@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import TodoTitle from './TodoTitle'
 
+import './css/default.css'
 let mock = require('../../../mock/todo-list/todo-list.json');
 
+
+//este componente é um container
 
 export default class Todo extends Component {
   
@@ -15,7 +18,7 @@ export default class Todo extends Component {
 
   render() {
     return (
-      <div>
+      <div className='todo-container'>
          <TodoTitle />
          <div>
          Componente de Todo 

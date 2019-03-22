@@ -30,7 +30,17 @@ module.exports = {
         },
         {
           test: /.(css|scss)$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+          use: [ 
+            {
+              loader: MiniCssExtractPlugin.loader
+            },
+            
+
+            {
+              loader: "css-loader",
+            }, 
+            "sass-loader"
+          ]
         },
         {
           test: /.(jpg|jpeg|png|gif|mp3|svg)$/,
@@ -54,8 +64,8 @@ module.exports = {
         template: path.join(__dirname, "src", "index.html")
       }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename:  '[name].[hash].css',
+      chunkFilename: '[id].[hash].css',
     })
     ]     
   }
